@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="style.css">
+  <title>Index</title>
+</head>
+<body>
+  <div class="box">
+  <form method="post">
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <i class="bi bi-eye-slash" id="togglePassword"></i>
+      <br>
+      <br>
+      <label>Maximum 15 characters: </label>
+      <textarea id="textarea" maxlength="15"></textarea>
+      <span id="rchars">15</span> characters remaining
+      <br>
+      <br>
+      <input type="checkbox" id="terms_and_conditions" value="1" onclick="terms_changed(this)">
+      <label for="terms_and_conditions">I agree to the Terms of Service:</label>
+      <br> <br>
+      <button type="submit" id="submit_button" disabled>Submit</button>
+
+  </form>
+  </div>
+    <p><button type="button" class="bgBtn">Set Background Image</button></p>
+    <br>
+    <br>
+    <p> Click this paragraph to see it fade.</p>
+    <br>
+    <br>
+    <button id="btn1">Animate height & width</button>
+<button id="btn2">Reset</button>
+<div id="box" style="background:
+#B45F04;height:100px;width:100px;margin:6px;"></div>
+  <div class="big">
+
+  </div>
+  <button onclick="scrollToTop()">
+      Click to scroll to top
+  </button>
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
